@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Here2Help — IoT Campus Assistance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Here2Help home">
+        <!-- Inline SVG mock logo using new palette -->
+        <svg id="logo" width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#6e3cbc"/>
+              <stop offset="0.6" stop-color="#824d99"/>
+              <stop offset="1" stop-color="#f08a5d"/>
+            </linearGradient>
+          </defs>
+          <rect rx="10" width="64" height="64" fill="url(#g1)"/>
+          <path d="M20 36c2-6 10-10 18-10 6 0 10 2 14 6-6-6-12-8-20-6-10 2-14 8-12 16z" fill="white" fill-opacity="0.96"/>
+          <circle cx="20" cy="20" r="4" fill="white" />
+        </svg>
+        <span class="brand-text">Here2Help</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#features">Features</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#demo">Demo</a>
+        <a href="#team">Team</a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn small ghost">GitHub</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="reveal">Here2Help</h1>
+          <p class="tagline reveal delay-1">IoT-powered, location-based assistance — connecting helpers and those in need in real time.</p>
+          <div class="hero-cta reveal delay-2">
+            <a class="btn primary" href="#demo">Watch Demo</a>
+            <a class="btn ghost" href="#features">Learn More</a>
+          </div>
+          <ul class="quick-features reveal delay-3" aria-hidden>
+            <li>Voice + Text requests</li>
+            <li>AI-assisted categorization</li>
+            <li>Real-time map & notifications</li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal delay-4" aria-hidden>
+          <div class="phone-mock" role="img" aria-label="Phone mockup showing map">
+            <div class="phone-screen">
+              <div class="map-placeholder">Interactive map — live requests</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features section">
+      <div class="container">
+        <h2 class="section-title reveal">Main features</h2>
+        <p class="section-sub reveal delay-1">Here2Help combines community, compassion, and instant support with cutting-edge IoT and Azure cloud services.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon">🎤</div>
+            <h3>Voice & Text Requests</h3>
+            <p>Open a help request by speaking or typing. Speech-to-text enables hands-free reporting for accessibility.</p>
+          </article>
+
+          <article class="card reveal delay-1">
+            <div class="card-icon">🤖</div>
+            <h3>Smart Categorization</h3>
+            <p>Azure Text Analytics and image metadata are used to auto-classify requests and extract action items.</p>
+          </article>
+
+          <article class="card reveal delay-2">
+            <div class="card-icon">🗺️</div>
+            <h3>Interactive Map</h3>
+            <p>See open requests nearby, filter by distance and urgency, and respond with one tap. Powered by Azure Maps.</p>
+          </article>
+
+          <article class="card reveal delay-3">
+            <div class="card-icon">⭐</div>
+            <h3>Trust & Ratings</h3>
+            <p>After help is completed, users can rate helpers — building trust and rewarding active contributors with gamified badges.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenarios" class="scenarios section">
+      <div class="container">
+        <h2 class="section-title reveal">Real-life scenarios</h2>
+        <p class="section-sub reveal delay-1">Examples from campus life that Here2Help is built to solve.</p>
+        <div class="scenario-grid">
+          <div class="scenario-card reveal">
+            <h4>Out of diapers at night</h4>
+            <p>A parent at home realizes there's no diapers for the newborn. They open a quick voice request — a neighbor brings what’s needed in minutes.</p>
+          </div>
+
+          <div class="scenario-card reveal delay-1">
+            <h4>Car trouble on the roadside</h4>
+            <p>A driver records a voice call for help. Helpers nearby receive the alert, one arrives with jumper cables and helps restart the car.</p>
+          </div>
+
+          <div class="scenario-card reveal delay-2">
+            <h4>Printer jam before deadline</h4>
+            <p>A student needs urgent help with a printer. A nearby volunteer skilled in repairs marks “I’m on my way” and resolves the issue quickly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo section">
+      <div class="container">
+        <h2 class="section-title reveal">Demo video</h2>
+        <p class="section-sub reveal delay-1">Short demonstration of the end‑to‑end flow: creating a request, map display, and helper response.</p>
+        <div class="video-wrap reveal delay-2">
+          <iframe width="860" height="484" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Here2Help demo placeholder" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team section">
+      <div class="container">
+        <h2 class="section-title reveal">Meet the team</h2>
+        <p class="section-sub reveal delay-1">Project for the IoT course — team members and roles.</p>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <img src="assets/team1.svg" alt="Michal Barkaheim" />
+            <h4>Michal B.</h4>
+            <p>Project Lead · Mobile & Backend</p>
+          </div>
+
+          <div class="team-card reveal delay-1">
+            <img src="assets/team2.svg" alt="Assaf Malachi" />
+            <h4>Assaf M.</h4>
+            <p>Developer · Cloud Integration</p>
+          </div>
+
+          <div class="team-card reveal delay-2">
+            <img src="assets/team3.svg" alt="Shay Dekel" />
+            <h4>Shay D.</h4>
+            <p>Developer · Frontend & Maps</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip reveal delay-3">
+      <div class="container strip-inner">
+        <div>
+          <h3>Try Here2Help</h3>
+          <p>Fork the repo, run the demo locally, or contribute — help make campuses safer and kinder.</p>
+        </div>
+        <div>
+          <a class="btn primary" href="https://github.com/" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Here2Help — University IoT Project</div>
+      <div>
+        <a href="mailto:here2help@example.com">here2help@example.com</a> ·
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
