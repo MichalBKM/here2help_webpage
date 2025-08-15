@@ -1,10 +1,9 @@
-# Webpage Link
-https://michalbkm.github.io/here2help_webpage/
-
 # Here2Help
 IoT-powered, location-based assistance, connecting helpers and those in need in real time.
 Here2Help is a cross-platform mobile application designed to strengthen community support by connecting people who need help with nearby volunteers. 
 From small daily favors to urgent situations, the app bridges the gap between those who can help and those who need it — instantly.
+### Webpage Link
+https://michalbkm.github.io/here2help_webpage/
 
 # 🌟 Vision
 We believe in bringing communities closer through technology - empowering anyone to offer or request help instantly.
