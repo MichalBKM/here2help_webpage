@@ -67,7 +67,7 @@ body.dark{background:var(--bg-dark);color:var(--muted-white);-webkit-font-smooth
 /* team */
 .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
 .team-card{background:var(--card-bg);padding:1rem;border-radius:12px;text-align:center;color:white}
-.team-card img{width:86px;height:86px;border-radius:50%;margin:0 auto 0.6rem;display:block}
+.team-card img{width:150px;height:150px;border-radius:50%;margin:0 auto 0.6rem;display:block}
 
 /* cta strip */
 .cta-strip{background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:1.2rem 0;margin-top:2rem;border-radius:12px}
