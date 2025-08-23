@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Admin console frame -->
+  <rect x="3" y="3" width="18" height="14" rx="2"/>
+  <!-- Simple bar stats inside console -->
+  <path d="M7 15v-4" />
+  <path d="M11 15v-7" />
+  <path d="M15 15v-2" />
+  <!-- Gear (settings) bottom-right -->
+  <circle cx="18" cy="18" r="2"/>
+  <path d="M18 14.5v1"/>
+  <path d="M18 20.5v1"/>
+  <path d="M14.5 18h1"/>
+  <path d="M20.5 18h1"/>
+  <path d="M16.6 16.6l.7.7"/>
+  <path d="M20.7 20.7l.7.7"/>
+  <path d="M16.6 19.4l.7-.7"/>
+  <path d="M20.7 15.3l.7-.7"/>
+</svg>
