@@ -390,7 +390,7 @@
       width: 40px;
       height: 40px;
       margin: 0 auto 1rem;
-      filter: brightness(0) invert(1); /* Make icon white */
+      filter: brightness(0) invert(1);
       object-fit: contain;
     }
 
@@ -506,36 +506,36 @@
     }
 
     .team-card {
-        background: var(--bg-card);
-        padding: 2rem;
-        border-radius: var(--radius);
-        text-align: center;
-        border: 1px solid var(--border);
-        transition: all 0.4s ease;
-        position: relative;
-        overflow: hidden;
-        width: 350px;
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      width: 350px;
     }
 
     .team-card:before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: conic-gradient(
-            from 0deg, 
-            transparent, 
-            rgba(110, 60, 188, 0.2),
-            rgba(110, 60, 188, 0.8), 
-            rgba(110, 60, 188, 0.2),
-            transparent
-        );
-        animation: rotate 3s linear infinite;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        filter: blur(8px) brightness(1.5);
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(
+        from 0deg, 
+        transparent, 
+        rgba(110, 60, 188, 0.2),
+        rgba(110, 60, 188, 0.8), 
+        rgba(110, 60, 188, 0.2),
+        transparent
+      );
+      animation: rotate 3s linear infinite;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      filter: blur(8px) brightness(1.5);
     }
     
     .team-card:hover:before {
@@ -626,10 +626,13 @@
       transform: translateY(30px);
       animation: reveal 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-
     .reveal.delay-1 { animation-delay: 0.2s; }
     .reveal.delay-2 { animation-delay: 0.4s; }
     .reveal.delay-3 { animation-delay: 0.6s; }
+    .reveal.delay-4 { animation-delay: 0.8s; }
+    .reveal.delay-5 { animation-delay: 1.0s; }
+    .reveal.delay-6 { animation-delay: 1.2s; }
+    .reveal.delay-7 { animation-delay: 1.4s; }
 
     @keyframes reveal {
       to {
@@ -699,24 +702,6 @@
       color: var(--primary);
     }
 
-    /* ANIMATIONS */
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: reveal 0.6s ease forwards;
-    }
-
-    .reveal.delay-1 { animation-delay: 0.2s; }
-    .reveal.delay-2 { animation-delay: 0.4s; }
-    .reveal.delay-3 { animation-delay: 0.6s; }
-
-    @keyframes reveal {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .nav {
@@ -763,7 +748,7 @@
         <a href="#services">Services</a>
         <a href="#demo">Demo</a>
         <a href="#team">Team</a>
-        <a href="https://github.com/" target="_blank" class="btn small ghost">GitHub</a>
+        <a href="https://github.com/ShayDekel/Here2Help" target="_blank" class="btn small ghost">GitHub</a>
       </nav>
       <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
     </div>
@@ -817,142 +802,156 @@
     </section>
 
     <!-- VISION + SCENARIOS -->
-    <section id="vision" class="section"> <div class="container">
-      <h2 class="section-title reveal">Our Vision</h2> 
-      <p class="section-sub reveal delay-1"> We believe in bringing communities closer through technology, and empowering anyone to offer or request help instantly.
-        Here2Help combines compassion, accessibility, and IoT innovation to make everyday life safer and more connected. </p>
-<div class="cards">
-  <div class="card reveal">
-    <h4>🛒 Groceries</h4>
-    <p>After knee surgery, Ilana realizes she’s out of milk. She posts a quick request in the app, and Tali, who lives just two streets away, picks it up on her way home.</p>
-    <p>A small gesture - but it makes Ilana feel cared.</p>
-    <img src="assets/images/groceries.jpg" alt="Neighbor delivering groceries" class="card-image">
-  </div>
-  <div class="card reveal delay-1">
-    <h4>👴 Elderly Assistance</h4>
-    <p>Danny, 82, has been sitting in a dim kitchen for days because the light bulb is too high to change safely. He posts for help, and within minutes Yosef from next door knocks on his door, replaces the bulb, and stays for a warm cup of tea and conversation.</p>
-    <img src="assets/images/lightbulb.jpg" alt="Changing a light bulb" class="card-image">
-  </div>
-  <div class="card reveal delay-2">
-    <h4>🐕‍🦺 Dog Walking</h4>
-    <p>David is stuck at work late, worried about his dog Luna waiting at home. He sends out a request, and Yael, a fellow dog lover from the building, happily takes Luna for a long walk. When David returns, Luna is calm, happy, and wagging her tail.</p>
-    <img src="assets/images/dog-walk.jpg" alt="Dog being walked" class="card-image">
-  </div>
-</div>
-    </div>
-  </section>
+    <section id="vision" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Our Vision</h2> 
+        <p class="section-sub reveal delay-1">
+          We believe in bringing communities closer through technology, and empowering anyone to offer or request help instantly.
+          Here2Help combines compassion, accessibility, and IoT innovation to make everyday life safer and more connected.
+        </p>
+        <div class="cards">
+          <div class="card reveal">
+            <h4>🛒 Groceries</h4>
+            <p>After knee surgery, Ilana realizes she’s out of milk. She posts a quick request in the app, and Tali, who lives just two streets away, picks it up on her way home.</p>
+            <p>A small gesture - but it makes Ilana feel cared.</p>
+            <img src="assets/images/groceries.jpg" alt="Neighbor delivering groceries" class="card-image">
+          </div>
+          <div class="card reveal delay-1">
+            <h4>👴 Elderly Assistance</h4>
+            <p>Danny, 82, has been sitting in a dim kitchen for days because the light bulb is too high to change safely. He posts for help, and within minutes Yosef from next door knocks on his door, replaces the bulb, and stays for a warm cup of tea and conversation.</p>
+            <img src="assets/images/lightbulb.jpg" alt="Changing a light bulb" class="card-image">
+          </div>
+          <div class="card reveal delay-2">
+            <h4>🐕‍🦺 Dog Walking</h4>
+            <p>David is stuck at work late, worried about his dog Luna waiting at home. He sends out a request, and Yael, a fellow dog lover from the building, happily takes Luna for a long walk. When David returns, Luna is calm, happy, and wagging her tail.</p>
+            <img src="assets/images/dog-walk.jpg" alt="Dog being walked" class="card-image">
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-<!-- FEATURES -->
-<section id="features" class="section">
-  <div class="container">
-    <h2 class="section-title reveal">Key Features</h2>
-    <div class="cards">
-      
-      <article class="card reveal">
-        <img src="assets/icons/mapping.svg" alt="Map Icon" class="card-icon" />
-        <h3>Interactive Map</h3>
-        <p>Visualize and explore requests in real time with an intuitive, map-based interface.</p>
-      </article>
-      
-      <article class="card reveal delay-1">
-        <img src="assets/icons/speech.svg" alt="Text Requests" class="card-icon" />
-        <h3>Voice & Text Requests</h3>
-        <p>Submit requests effortlessly using either voice input or traditional text.</p>
-      </article>
-      
-      <article class="card reveal delay-2">
-        <img src="assets/icons/brain.svg" alt="Brain Icon" class="card-icon" />
-        <h3>AI-Powered Categorization, Tagging & Translation</h3>
-        <p>Automatically organize content and translate in real time using advanced AI.</p>
-      </article>
-      
-      <article class="card reveal delay-3">
-        <img src="assets/icons/tropy.svg" alt="Gamification Icon" class="card-icon" />
-        <h3>Gamification Elements</h3>
-        <p>Engage users through leaderboards, ratings, and achievement-driven interactions.</p>
-      </article>
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Key Features</h2>
+        <div class="cards">
+          
+          <article class="card reveal">
+            <img src="assets/icons/mapping.svg" alt="Map Icon" class="card-icon" />
+            <h3>Interactive Map</h3>
+            <p>Visualize and explore requests in real time with an intuitive, map-based interface.</p>
+          </article>
+          
+          <article class="card reveal delay-1">
+            <img src="assets/icons/speech.svg" alt="Text & Voice Requests" class="card-icon" />
+            <h3>Voice & Text Requests</h3>
+            <p>Submit requests effortlessly using either voice input or traditional text.</p>
+          </article>
+          
+          <article class="card reveal delay-2">
+            <img src="assets/icons/brain.svg" alt="AI Features Icon" class="card-icon" />
+            <h3>AI-Powered Categorization, Tagging & Translation</h3>
+            <p>Automatically organize content and translate in real time using advanced AI.</p>
+          </article>
+          
+          <article class="card reveal delay-3">
+            <img src="assets/icons/trophy.svg" alt="Gamification Icon" class="card-icon" />
+            <h3>Gamification Elements</h3>
+            <p>Engage users through leaderboards, ratings, and achievement-driven interactions.</p>
+          </article>
                   
-      <article class="card reveal delay-4">
-        <img src="assets/icons/handshake.svg" alt="Handshake Icon" class="card-icon" />
-        <h3>Real-Time Chat</h3>
-        <p>Message helpers instantly to share details and coordinate support on the spot.</p>
-      </article>
-            
-      <article class="card reveal delay-5">
-        <img src="assets/icons/filter.svg" alt="Filter Icon" class="card-icon" />
-        <h3>Advanced Filtering</h3>
-        <p>Filter requests by distance, urgency, and category to find what matters most-fast.</p>
-      </article>
-      
-    </div>
-  </div>
-</section>
+          <article class="card reveal delay-4">
+            <img src="assets/icons/handshake.svg" alt="Chat Icon" class="card-icon" />
+            <h3>Real-Time Chat</h3>
+            <p>Message helpers instantly to share details and coordinate support on the spot.</p>
+          </article>
+                
+          <article class="card reveal delay-5">
+            <img src="assets/icons/filter.svg" alt="Filter Icon" class="card-icon" />
+            <h3>Advanced Filtering</h3>
+            <p>Filter requests by distance, urgency, and category to find what matters most—fast.</p>
+          </article>
 
+          <!-- NEW: QR Code Smart Sharing -->
+          <article class="card reveal delay-6">
+            <img src="assets/icons/qr.svg" alt="QR Code Icon" class="card-icon" />
+            <h3>QR Code Smart Sharing</h3>
+            <p>Generate a scannable QR for any request to share instantly—post on doorways, flyers, or group chats for frictionless access.</p>
+          </article>
+
+          <!-- NEW: Admin Console & Statistics -->
+          <article class="card reveal delay-7">
+            <img src="assets/icons/admin.svg" alt="Admin Dashboard Icon" class="card-icon" />
+            <h3>Admin Console & Stats</h3>
+            <p>Moderate requests, manage users, and monitor live KPIs with dashboards: trends, heatmaps, categories, and SLA-style response times.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
 
     <!-- SERVICES -->
-<!-- SERVICES -->
-<section id="services" class="section">
-  <div class="container">
-    <h2 class="section-title reveal">Our Services & APIs</h2>
-    <p class="section-sub reveal delay-1">
-      Built using cloud services and APIs for seamless performance.
-    </p>
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Our Services & APIs</h2>
+        <p class="section-sub reveal delay-1">
+          Built using cloud services and APIs for seamless performance.
+        </p>
 
-    <div class="cards">
+        <div class="cards">
 
-      <!-- React Native & JavaScript -->
-      <article class="card reveal">
-        <img src="assets/icons/react.svg" alt="React Native Icon" class="card-icon" />
-        <h3>React Native & JavaScript</h3>
-        <p>Cross-platform mobile development</p>
-      </article>
+          <!-- React Native & JavaScript -->
+          <article class="card reveal">
+            <img src="assets/icons/react.svg" alt="React Native Icon" class="card-icon" />
+            <h3>React Native & JavaScript</h3>
+            <p>Cross-platform mobile development</p>
+          </article>
 
-      <!-- Firebase -->
-      <article class="card reveal delay-1">
-        <img src="assets/icons/firebase.svg" alt="Firebase Icon" class="card-icon" />
-        <h3>Firebase</h3>
-        <p>Realtime database and authentication for scalable backend services.</p>
-      </article>
+          <!-- Firebase -->
+          <article class="card reveal delay-1">
+            <img src="assets/icons/firebase.svg" alt="Firebase Icon" class="card-icon" />
+            <h3>Firebase</h3>
+            <p>Realtime database and authentication for scalable backend services.</p>
+          </article>
 
-      <!-- Google & Azure Maps -->
-      <article class="card reveal delay-2">
-        <img src="assets/icons/map.svg" alt="Maps Icon" class="card-icon" />
-        <h3>Google & Azure Maps</h3>
-        <p>Interactive geolocation and mapping for live request tracking.</p>
-      </article>
+          <!-- Google & Azure Maps -->
+          <article class="card reveal delay-2">
+            <img src="assets/icons/map.svg" alt="Maps Icon" class="card-icon" />
+            <h3>Google & Azure Maps</h3>
+            <p>Interactive geolocation and mapping for live request tracking.</p>
+          </article>
 
-      <!-- Azure Blob Storage -->
-      <article class="card reveal delay-3">
-        <img src="assets/icons/blob.svg" alt="Blob Storage Icon" class="card-icon" />
-        <h3>Azure Blob Storage</h3>
-        <p>Efficient file storage in the cloud.</p>
-      </article>
+          <!-- Azure Blob Storage -->
+          <article class="card reveal delay-3">
+            <img src="assets/icons/blob.svg" alt="Blob Storage Icon" class="card-icon" />
+            <h3>Azure Blob Storage</h3>
+            <p>Efficient file storage in the cloud.</p>
+          </article>
 
-      <!-- Azure Speech Service -->
-      <article class="card reveal delay-4">
-        <img src="assets/icons/azure.svg" alt="Azure Icon" class="card-icon" />
-        <h3>Azure Speech Service</h3>
-        <p>Transforms voice into text, and text into natural, lifelike speech.</p>
-      </article>
+          <!-- Azure Speech Service -->
+          <article class="card reveal delay-4">
+            <img src="assets/icons/azure.svg" alt="Azure Icon" class="card-icon" />
+            <h3>Azure Speech Service</h3>
+            <p>Transforms voice into text, and text into natural, lifelike speech.</p>
+          </article>
 
-      <!-- Azure OpenAI -->
-      <article class="card reveal delay-5">
-        <img src="assets/icons/openai.svg" alt="Azure OpenAI Icon" class="card-icon" />
-        <h3>Azure OpenAI</h3>
-        <p>Delivers smart tagging, content categorization, and real-time translation with AI.</p>
-      </article>
+          <!-- Azure OpenAI -->
+          <article class="card reveal delay-5">
+            <img src="assets/icons/openai.svg" alt="Azure OpenAI Icon" class="card-icon" />
+            <h3>Azure OpenAI</h3>
+            <p>Delivers smart tagging, content categorization, and real-time translation with AI.</p>
+          </article>
 
-      <!-- CountriesNow API -->
-      <article class="card reveal delay-6">
-        <img src="assets/icons/globe.svg" alt="CountriesNow Icon" class="card-icon" />
-        <h3>CountriesNow API</h3>
-        <p>Provides country and city data for accurate location inputs.</p>
-      </article>
+          <!-- CountriesNow API -->
+          <article class="card reveal delay-6">
+            <img src="assets/icons/globe.svg" alt="CountriesNow Icon" class="card-icon" />
+            <h3>CountriesNow API</h3>
+            <p>Provides country and city data for accurate location inputs.</p>
+          </article>
 
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
     <!-- DEMO VIDEO -->
     <section id="demo" class="section">
@@ -964,7 +963,7 @@
             width="860" 
             height="484" 
             src="https://www.youtube.com/embed/tdxNM-svlJk?si=ZxO7dcQp9NZ0lP2x" 
-            title="Here2Help Promotion Video" 
+            title="Here2Help End-to-End Demo" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
@@ -1000,7 +999,7 @@
       <div class="container strip-inner">
         <div>
           <h3>Try Here2Help</h3>
-          <p>Join our community, Spread the word, and visit us on GitHub!</p>
+          <p>Join our community, spread the word, and visit us on GitHub!</p>
         </div>
         <div>
           <a class="btn primary" href="https://github.com/ShayDekel/Here2Help" target="_blank">View on GitHub</a>
