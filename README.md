@@ -1,7 +1,7 @@
 # Here2Help
 IoT-powered, location-based assistance, connecting helpers and those in need in real time.
 Here2Help is a cross-platform mobile application designed to strengthen community support by connecting people who need help with nearby volunteers. 
-From small daily favors to urgent situations, the app bridges the gap between those who can help and those who need it — instantly.
+From small daily favors to urgent situations, the app bridges the gap between those who can help and those who need it - instantly.
 ### Webpage Link
 https://michalbkm.github.io/here2help_webpage/
 
@@ -18,7 +18,7 @@ Watch the Promotion Video on YouTube: https://www.youtube.com/watch?v=rfB8fVw_C6
 * 🧠 AI-Powered Categorization, Tagging & Translation: Automatically organize and translate requests in real time.
 * 🏆 Gamification Elements: Engage users through leaderboards, ratings, and achievement-driven interactions.
 * 💬 User Chat & Collaboration: Communicate directly with other users to coordinate assistance.
-* 🎯 Advanced Filtering: Filter by distance, urgency, and category to find what matters most—fast.
+* 🎯 Advanced Filtering: Filter by distance, urgency, and category to find what matters most-fast.
 
 # 🛠 Technologies & APIs
 * React Native & JavaScript: Cross-platform mobile development
