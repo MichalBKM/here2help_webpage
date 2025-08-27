@@ -32,7 +32,7 @@ Watch the Promotion Video on YouTube: https://www.youtube.com/watch?v=rfB8fVw_C6
 * Michal Berkheim: berkheim1@mail.tau.ac.il
 * Shay Dekel: shaydekel1@mail.tau.ac.il
 
-<p float="left" align="center"> <img src="here2help/assets/Asaf.jpeg" width="150" text="Asaf Malachi" /> <img src="here2help/assets/Michal.png" width="150" /> <img src="here2help/assets/Shay.png" width="150" /> </p>
+<p float="left" align="center"> <img src="assets/Asaf.jpeg" width="150" text="Asaf Malachi" /> <img src="assets/Michal.png" width="150" /> <img src="assets/Shay.png" width="150" /> </p>
 
 ## Key Features
 * 🗺 Interactive Map: Visualize and explore requests in real time with an intuitive, map-based interface.
